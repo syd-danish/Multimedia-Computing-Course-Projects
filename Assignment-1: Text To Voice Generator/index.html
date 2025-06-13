@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech Converter</h1>
+        <textarea id="text-input" placeholder="Type your text here..."></textarea>
+
+        <div class="controls">
+            <label for="voice-select">Choose Voice:</label>
+            <select id="voice-select"></select>
+
+            <label for="rate">Speed:</label>
+            <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+
+            <label for="pitch">Pitch:</label>
+            <input type="range" id="pitch" min="0.5" max="2" step="0.1" value="1">
+        </div>
+
+        <button onclick="speakText()">Speak</button>
+        <button onclick="stopSpeaking()">Stop</button>
+        <button onclick="downloadAudio()">Download</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
